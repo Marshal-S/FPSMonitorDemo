@@ -56,7 +56,6 @@
 - (void)stopMonitor {
     if (_displayLink) {
         [_displayLink invalidate];
-        [_displayLink removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         _displayLink = nil;
     }
 }
